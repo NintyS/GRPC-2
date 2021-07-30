@@ -1,0 +1,12 @@
+syntax = "proto3";
+package save;
+
+option go_package = "Podejście_Drugie/;save";
+
+message Message {
+  string body = 1;
+}
+
+service ChatService {
+  rpc Save(Message) returns (Message) {}
+}
